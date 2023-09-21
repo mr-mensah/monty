@@ -4,7 +4,7 @@ push 3
 push 4
 push 0
 push 110
-push 00
+push 0
 push 110
 push 111
 push 116
@@ -15,4 +15,3 @@ push 108
 push 111
 push 72
 pstr
-
