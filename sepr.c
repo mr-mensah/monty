@@ -17,7 +17,7 @@ len++;
 }
 if (len < 2)
 {
-vprintf(stderr, "L%d: can't div, stack too short\n", counter);
+fprintf(stderr, "L%d: can't div, stack too short\n", counter);
 fclose(bus.file);
 free(bus.content);
 emp_stacks(*head);
@@ -26,7 +26,7 @@ exit(EXIT_FAILURE);
 h = *head;
 if (h->n == 0)
 {
-vprintf(stderr, "L%d: division by zero\n", counter);
+fprintf(stderr, "L%d: division by zero\n", counter);
 fclose(bus.file);
 free(bus.content);
 emp_stacks(*head);
