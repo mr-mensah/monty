@@ -43,11 +43,11 @@ return (0);
 }
 i++;
 }
-if (op && opst[i].opcode == NULL)
-{ vprintf(stderr, "L%d: unknown instruction %s\n", counter, op);
-fclose(file);
-free(content);
-emp_stacks(*stack);
-exit(EXIT_FAILURE); }
-return (1);
+	if (op && opst[i].opcode == NULL)
+	{ fprintf(stderr, "L%d: unknown instruction %s\n", counter, op);
+		fclose(file);
+		free(content);
+		free_stack(*stack);
+		exit(EXIT_FAILURE); }
+	return (1);
 }
