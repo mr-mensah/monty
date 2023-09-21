@@ -17,7 +17,7 @@ len++;
 }
 if (len < 2)
 {
-vprintf(stderr, "L%d: can't add, stack too short\n", counter);
+fprintf(stderr, "L%d: can't add, stack too short\n", counter);
 fclose(bus.file);
 free(bus.content);
 emp_stacks(*head);
