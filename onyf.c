@@ -14,7 +14,7 @@ for (nodes = 0; aux != NULL; nodes++)
 aux = aux->next;
 if (nodes < 2)
 {
-vprintf(stderr, "L%d: can't sub, stack too short\n", counter);
+fprintf(stderr, "L%d: can't sub, stack too short\n", counter);
 fclose(bus.file);
 free(bus.content);
 emp_stacks(*head);
