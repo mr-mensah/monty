@@ -16,14 +16,14 @@ stack_t *stack = NULL;
 unsigned int counter = 0;
 if (argc != 2)
 {
-vprintf(stderr, "USAGE: monty file\n");
+fprintf(stderr, "USAGE: monty file\n");
 exit(EXIT_FAILURE);
 }
 file = fopen(argv[1], "r");
 bus.file = file;
 if (!file)
 {
-vprintf(stderr, "Error: Can't open file %s\n", argv[1]);
+fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
 while (read_line > 0)
